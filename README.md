@@ -25,11 +25,17 @@ Aplikasi manajemen perpustakaan modern berbasis **Full-stack Web Architecture**.
 
 ### 1. Persiapan Backend (API)
 
-```bash
-cd perpustakaan-api
-composer install
-# Salin file .env dan sesuaikan database PostgreSQL Anda
-php artisan key:generate
-php artisan migrate
-php artisan serve
-```
+1. Masuk ke direktori: `cd perpustakaan-api`
+2. Instal dependensi: `composer install`
+3. Konfigurasi database.
+4. Generate Key: `php artisan key:generate`
+5. Migrasi Database: `php artisan migrate`
+6. Jalankan Server: `php artisan serve`
+   _Backend berjalan di: http://127.0.0.1:8000_
+
+### 2. Persiapan Frontend (React)
+
+1. Masuk ke direktori: `cd perpustakaan-frontend`
+2. Instal dependensi: `npm install`
+3. Jalankan Aplikasi: `npm start`
+   _Frontend berjalan di: http://localhost:3000_
